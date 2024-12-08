@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Manager Dashboard</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="assets/EventKey/assets/logo/favicon.jpeg" alt="Icon" width="75" height="75" class="me-2">
+      </a>
+      <h1 style="font-weight:bold; font-size:40px">EventKey</h1>
+    </div>
+
+    <nav class="nav-menu">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About Us</a>
+      <div class="dropdown">
+        <a class="dropdown-toggle">Account</a>
+        <div class="dropdown-menu">
+          <a href="/profile.html" target="content-frame">Profile</a>
+          <a href="/index.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="dashboard-container">
+    <div class="dashboard-actions">
+      <a href="create_event.html" target="content-frame">Create Event</a>
+      <a href="manage_event.html" target="content-frame">Manage Event</a>
+      <a href="ticket_sales.html" target="content-frame">Ticket Sales</a>
+    </div>
+    <main class="dashboard-content">
+      <iframe name="content-frame"
+              id="content-frame"
+              src="create_event.html"
+              frameborder="0">
+      </iframe>
+    </main>
+  </div>
+</body>
+</html>

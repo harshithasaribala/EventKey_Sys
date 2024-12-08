@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <header>
+    <h1>Admin Dashboard</h1>
+  </header>
+  <div class="row">
+    <nav class="col-md-3 sidebar bg-light">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin-dashboard/event-approval" routerLinkActive="active">Event Approval</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin-dashboard/revenue-reports" routerLinkActive="active">Revenue Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin-dashboard/manage-users" routerLinkActive="active">Manage Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin-dashboard/promotions" routerLinkActive="active">Promotions</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-danger mt-3" (click)="logout()">Log Out</button>
+        </li>
+      </ul>
+    </nav>
+    <main class="col-md-9">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
